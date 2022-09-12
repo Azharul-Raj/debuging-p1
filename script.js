@@ -1,10 +1,13 @@
 const elementById = (id) => {
-  document.getElementById(id);
+  const searchField = document.getElementById(id);
+  const searchValue = searchField.value
+  searchField.value = ``
+  return searchValue
 };
 
 const handleSearch = () => {
   const keyword = elementById("keyword");
-  const url = `https://theaudiodb.com/api/v1/json/2/search.php?s=${keyword.value}`;
+  const url = `https://theaudiodb.com/api/v1/json/2/search.php?s=${keyword}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => showArtists(data));
