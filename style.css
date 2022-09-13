@@ -22,7 +22,7 @@ header {
   padding: 20px 50px;
 }
 
-header h1 {
+header h2 {
   font-family: "Libre Baskerville", serif;
   color: var(--purple);
 }

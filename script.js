@@ -55,6 +55,8 @@ const showAlbum = (data) => {
   const {strArtistThumb,strBiographyEN,strCountry,strGenre}=data
   const albumContainer = document.getElementById("albums");
   document.getElementById('desc').innerText=strBiographyEN
+  document.getElementById('country').innerText=strCountry
+  document.getElementById('genre').innerText=strGenre
   // data.forEach((item) => {
   //   const div = document.createElement("div");
   //   div.classList.add("album");
