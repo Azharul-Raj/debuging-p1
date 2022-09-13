@@ -16,6 +16,7 @@ const handleSearch = () => {
 const showArtists = (data) => {
   console.log(data)
   const artistContainer = document.getElementById("artists");
+  artistContainer.textContent = ``
   data?.artists?.forEach((artist) => {
     const div = document.createElement("div");
     div.classList.add("artist-card");
